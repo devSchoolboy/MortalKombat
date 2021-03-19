@@ -5,10 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
   <title>КиноПульс</title>
 </head>
@@ -17,15 +16,15 @@
   <div class="app" id="app">
     <header class="header">
       <a href="#" class="logo">
-        <img src="/img/КиноПульс.svg" alt="КиноПульс">
+        <img src="img/КиноПульс.svg" alt="КиноПульс">
       </a>
       <a href="" class="user">
         <span class="user-name">Дмитрий</span>
-        <img class="user-avatar" src="/img/avatar.jpg" alt="аватар">
+        <img class="user-avatar" src="img/avatar.jpg" alt="аватар">
       </a>
     </header>
     <section class="film">
-      <img src="/img/film-logo.png" alt="Мортал Комбат" class="film-logo">
+      <img src="img/film-logo.png" alt="Мортал Комбат" class="film-logo">
       <div class="tags">
         <span class="date">2021</span>
         <span class="genre">боевик, фентези, фантастика</span>
@@ -39,20 +38,22 @@
 
         <a class="button button-primary" data-fancybox data-src="#trueModal" data-modal="true"
           href="javascript:;">Предзаказ фильма</a>
-        <div class="window-modal" id="trueModal">
+        <div class="window-popup" id="trueModal">
+          <p>Введите свой email адрес для оформления предзаказа</p>
           <form action="#">
-            <p>Если вы не хотите пропустить начало премьеры,то вы можете подписаться на нашу рассылку</p>
+
             <p>Email: <input type="email" name="login"></p>
-            <p class="btn-group"><button class="">Подписаться</button>
-              <button data-fancybox-close class="btn">Закрыть</button>
-            </p>
+
+            <input type="submit" value="Подписаться" class="btn-submit">
+            <button data-fancybox-close class="btn">Закрыть</button>
+
           </form>
 
         </div>
         <!--играюсь с модальным окном,если сломается.Правь тут-->
 
         <a class=" button button-default" data-fancybox href="https://www.youtube.com/watch?v=1ar_V1_uatA">
-          <img src="/img/play.svg" alt="icon:play">
+          <img src="img/play.svg" alt="icon:play">
           <span class="button-text">Смотреть трейлер</span>
         </a>
       </div>
@@ -61,9 +62,9 @@
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="/js/jquery.vide.min.js"></script>
+  <script src="js/jquery.vide.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-  <script src="/js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
